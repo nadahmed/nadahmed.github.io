@@ -13,6 +13,13 @@ Interests
       - IoT and embedded systems tinkering
       - AI / LLM experimentation
       - Open-source tooling
+      - Fitness and weightlifting
+      - Reading (tech, finance, psychology)
+      - Music — thrash metal, audio production
+      - Movies and storytelling
+      - Crypto markets and decentralized tech
+      - Meditation and mindfulness
+      - Skill acquisition — constantly learning something new
 
    .. grid-item-card:: MBTI Personality
       :shadow: md
