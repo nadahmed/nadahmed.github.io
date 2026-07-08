@@ -78,25 +78,25 @@
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="projects/sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/gym-management.html">SharkRaven — Gym Management System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/agnistop.html">AgniStop — Fire Safety IoT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/photoshop-automation-plugin.html">Photoshop Automation Plugin — JavaScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/gym-management.html">SharkRaven — Gym Management System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/hr-system.html">HRMS with Biometric Attendance Integration</a></li>
 </ul>
 </li>
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="projects/tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/agnistop.html">AgniStop — Fire Safety IoT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/self-balancing-robot.html">Self Balancing Robot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v1.html">Savage V1 — Line Follower</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v2.html">Savage V2 — Line + Ceiling Follower</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v3.html">Savage V3 — Modular LFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/obstacle-indicator.html">Obstacle Indicator for the Blind (Acoustics)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/h-bridge-motor-driver.html">H-Bridge Motor Driver (MOSFETs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
 </ul>
 </li>
 </ul>
@@ -107,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="volunteer.html">Volunteer Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="music.html">Music</a></li>
-<li class="toctree-l1"><a class="reference internal" href="freelance-design.html">Freelance Graphics Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freelance-design.html">Graphics Design</a></li>
 </ul>
 </nav>
 </div>
@@ -132,6 +132,8 @@
 <div id="content" role="main">
 <section id="education-achievements">
 <span id="certifications"></span><h1>Education &amp; Achievements<a class="headerlink" href="#education-achievements" title="Link to this heading"><span>#</span></a></h1>
+<section id="education">
+<h2>Education<a class="headerlink" href="#education" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#education'"><span>#</span></a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -139,11 +141,36 @@
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 BSc. in Electrical and Electronic Engineering</div>
-<p class="sd-card-text"><strong>North South University</strong> — 2018 (CGPA: 3.07)</p>
+<p class="sd-card-text"><strong>North South University</strong> — 2018</p>
 <p class="sd-card-text">Thesis: <em>IoT Home Automation &amp; Energy Monitoring</em></p>
 </div>
 </div>
 </div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+A Levels</div>
+<p class="sd-card-text"><strong>Maple Leaf International School</strong> — 2012, Dhaka, Bangladesh</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+O Levels</div>
+<p class="sd-card-text"><strong>Siddiqui’s International School</strong> — 2009, Dhaka, Bangladesh</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="achievements">
+<h2>Achievements<a class="headerlink" href="#achievements" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#achievements'"><span>#</span></a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
 <div class="sd-card-body docutils">
@@ -185,7 +212,44 @@ networking. Sponsored by ChobirBaksho.com and ICT Division, Bangladesh (2021).</
 </div>
 </div>
 </section>
-</div></div>
+<section id="professional-certifications">
+<h2>Professional Certifications<a class="headerlink" href="#professional-certifications" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#professional-certifications'"><span>#</span></a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+IBM Blockchain Foundation Developer V2</div>
+<p class="sd-card-text">IBM</p>
+<p class="sd-card-text"><cite>Issued Jan 2022</cite></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fwww%2Ecredly%2Ecom%2Fbadges%2F51fb0a73-1d81-4fb5-b6cd-745d87e8c4b7%3Fsource%3Dlinked_in_profile&amp;urlhash=05Mh&amp;mt=hl3JHfnYnj7tsUCKPVj46N_WBB3Rh57SRMDZh7cDq9_sr0M_GN7cTh6bJsqxCEasJpzJQRjB_DIgxjA7rsc0V_2g3Tc&amp;isSdui=true"><span>https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fwww%2Ecredly%2Ecom%2Fbadges%2F51fb0a73-1d81-4fb5-b6cd-745d87e8c4b7%3Fsource%3Dlinked_in_profile&amp;urlhash=05Mh&amp;mt=hl3JHfnYnj7tsUCKPVj46N_WBB3Rh57SRMDZh7cDq9_sr0M_GN7cTh6bJsqxCEasJpzJQRjB_DIgxjA7rsc0V_2g3Tc&amp;isSdui=true</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Blockchain Essentials</div>
+<p class="sd-card-text">Cognitive Class</p>
+<p class="sd-card-text"><cite>Issued Jan 2022</cite></p>
+<p class="sd-card-text"><strong>Credential ID</strong> 75743b24fa9245cb85e97e055b4b2f58.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fcourses%2Ecognitiveclass%2Eai%2Fcertificates%2F75743b24fa9245cb85e97e055b4b2f58&amp;urlhash=V4hs&amp;mt=8Mz5kxwAWwgpEHP1SSU23zhT3cYa-RuaZRZDz-NJFjc_hTaV5NteAVDwcU85rh7n0O90kf0ogeQpFQvdtZGvsp6qexU&amp;isSdui=true"><span>https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fcourses%2Ecognitiveclass%2Eai%2Fcertificates%2F75743b24fa9245cb85e97e055b4b2f58&amp;urlhash=V4hs&amp;mt=8Mz5kxwAWwgpEHP1SSU23zhT3cYa-RuaZRZDz-NJFjc_hTaV5NteAVDwcU85rh7n0O90kf0ogeQpFQvdtZGvsp6qexU&amp;isSdui=true</span></a></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#education'" class="reference internal" href="#education">Education</a></li>
+<li><a :data-current="activeSection === '#achievements'" class="reference internal" href="#achievements">Achievements</a></li>
+<li><a :data-current="activeSection === '#professional-certifications'" class="reference internal" href="#professional-certifications">Professional Certifications</a></li>
+</ul>
+</div>
+</aside>
 </main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">

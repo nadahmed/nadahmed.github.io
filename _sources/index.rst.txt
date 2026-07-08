@@ -2,7 +2,7 @@
  Noor Al Din Ahmed — Portfolio
 ==============================
 
-.. grid:: 2
+.. grid:: 1
 
    .. grid-item-card:: About Me
       :link: about

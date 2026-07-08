@@ -56,8 +56,8 @@ The project is being developed as a long-term personal accounting workspace.
 The near-term focus is on improving reliability, reporting quality, and the
 ergonomics of transaction entry while keeping the core accounting model intact.
 
-.. button-link:: https://github.com/nadahmed/sulfur-ledger
+.. button-link:: https://sulfurbook.netlify.app/
    :color: primary
    :shadow:
 
-   View on GitHub
+   View site

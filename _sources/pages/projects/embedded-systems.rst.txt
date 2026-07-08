@@ -22,12 +22,11 @@ Embedded Systems
 
    tld-logger
    xfishery-controller
-   agnistop
    self-balancing-robot
    savage-v1
    savage-v2
    savage-v3
-   dc-dc-buck-converter
-   esp8266-programmer
    obstacle-indicator
+   dc-dc-buck-converter
    h-bridge-motor-driver
+   esp8266-programmer

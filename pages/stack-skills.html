@@ -32,7 +32,7 @@
 <link href="../search.html" rel="search" title="Search"/>
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="certifications.html" rel="next" title="Education &amp; Achievements"/>
-<link href="projects/h-bridge-motor-driver.html" rel="prev" title="H-Bridge Motor Driver (MOSFETs)"/>
+<link href="projects/esp8266-programmer.html" rel="prev" title="ESP8266 ESP-01 Programmer Kit"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
 <div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
@@ -78,25 +78,25 @@
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="projects/sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/gym-management.html">SharkRaven — Gym Management System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/agnistop.html">AgniStop — Fire Safety IoT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/photoshop-automation-plugin.html">Photoshop Automation Plugin — JavaScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/gym-management.html">SharkRaven — Gym Management System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/hr-system.html">HRMS with Biometric Attendance Integration</a></li>
 </ul>
 </li>
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="projects/tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/agnistop.html">AgniStop — Fire Safety IoT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/self-balancing-robot.html">Self Balancing Robot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v1.html">Savage V1 — Line Follower</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v2.html">Savage V2 — Line + Ceiling Follower</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/savage-v3.html">Savage V3 — Modular LFR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/obstacle-indicator.html">Obstacle Indicator for the Blind (Acoustics)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/h-bridge-motor-driver.html">H-Bridge Motor Driver (MOSFETs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
 </ul>
 </li>
 </ul>
@@ -107,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="volunteer.html">Volunteer Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="music.html">Music</a></li>
-<li class="toctree-l1"><a class="reference internal" href="freelance-design.html">Freelance Graphics Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freelance-design.html">Graphics Design</a></li>
 </ul>
 </nav>
 </div>
@@ -133,7 +133,7 @@
 <section id="stack-skills">
 <span id="id1"></span><h1>Stack &amp; Skills<a class="headerlink" href="#stack-skills" title="Link to this heading"><span>#</span></a></h1>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
 <div class="sd-card-body docutils">
