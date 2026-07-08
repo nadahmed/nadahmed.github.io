@@ -4,7 +4,7 @@
 Interests
 ==========
 
-.. grid:: 2
+.. grid:: 1
 
    .. grid-item-card:: Hobbies & Personal Interests
       :shadow: md

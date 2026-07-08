@@ -4,7 +4,7 @@
 Stack & Skills
 ==============
 
-.. grid:: 2
+.. grid:: 1
 
    .. grid-item-card:: Languages
       :shadow: md

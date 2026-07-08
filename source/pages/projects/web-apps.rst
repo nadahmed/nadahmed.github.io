@@ -24,8 +24,9 @@ Featured Projects
    :hidden:
 
    sulfurbook
+   gym-management
+   agnistop
    photoshop-automation-plugin
    illustrator-automation-plugin
    chobirbaksho
-   gym-management
    hr-system

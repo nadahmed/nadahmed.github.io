@@ -80,14 +80,14 @@ Contact
    :stub-columns: 1
 
    * - GitHub
-     - https://github.com/nadahmed
+     - `github.com/nadahmed <https://github.com/nadahmed>`_
    * - LinkedIn
-     - https://linkedin.com/in/nadahmed
+     - `linkedin.com/in/nadahmed <https://linkedin.com/in/nadahmed>`_
    * - Upwork
-     - https://www.upwork.com/freelancers/~01170599e31e8b3243
+     - `upwork.com/freelancers/~01170599e31e8b3243 <https://www.upwork.com/freelancers/~01170599e31e8b3243>`_
    * - WhatsApp
-     - +880 1717-229479
+     - `+880 1717-229479 <https://wa.me/8801717229479>`_
    * - Email
-     - nooraldinahmed@gmail.com
+     - `nooraldinahmed@gmail.com <mailto:nooraldinahmed@gmail.com>`_
    * - Location
      - Dhaka, Bangladesh

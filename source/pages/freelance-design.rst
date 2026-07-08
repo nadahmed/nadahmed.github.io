@@ -1,7 +1,7 @@
 .. _freelance-design:
 
 =========================
-Freelance Graphics Design
+Graphics Design
 =========================
 
 Graphic design work done on **Upwork**, **Elance**, and **oDesk** — including
