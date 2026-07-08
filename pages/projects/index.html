@@ -76,12 +76,29 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About Me</a></li>
 <li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="current reference internal expandable" href="#">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
-<li class="toctree-l2"><a class="reference internal" href="web-apps.html">Web Apps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="embedded-systems.html">Embedded Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pcbs.html">PCB Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="firmwares.html">Firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gym-management.html">Gym Management System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hr-system.html">HR System with Access Control Integration</a></li>
+<li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l3"><a class="reference internal" href="sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photoshop-automation-plugin.html">Photoshop Automation Plugin — JavaScript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gym-management.html">SharkRaven — Gym Management System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hr-system.html">HRMS with Biometric Attendance Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l3"><a class="reference internal" href="tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="agnistop.html">AgniStop — Fire Safety IoT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="self-balancing-robot.html">Self Balancing Robot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v1.html">Savage V1 — Line Follower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v2.html">Savage V2 — Line + Ceiling Follower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v3.html">Savage V3 — Modular LFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="obstacle-indicator.html">Obstacle Indicator for the Blind (Acoustics)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="h-bridge-motor-driver.html">H-Bridge Motor Driver (MOSFETs)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../stack-skills.html">Stack &amp; Skills</a></li>
@@ -115,67 +132,54 @@
 <div id="content" role="main">
 <section id="projects">
 <span id="id1"></span><h1>Projects<a class="headerlink" href="#projects" title="Link to this heading"><span>#</span></a></h1>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Web Apps</div>
-<p class="sd-card-text">Full-stack web applications, APIs, and front-end work.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="web-apps.html#web-apps"><span class="std std-ref">Web Apps</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Embedded Systems</div>
-<p class="sd-card-text">Firmware, microcontrollers, RTOS, and hardware-software integration.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="embedded-systems.html#embedded-systems"><span class="std std-ref">Embedded Systems</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-PCB Design</div>
-<p class="sd-card-text">Schematic capture, layout, and board bring-up.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="pcbs.html#pcbs"><span class="std std-ref">PCB Design</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Firmware</div>
-<p class="sd-card-text">Bare-metal and firmware projects for various MCUs.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="firmwares.html#firmwares"><span class="std std-ref">Firmware</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Gym Management System</div>
-<p class="sd-card-text">Member management, billing, scheduling, and reporting.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="gym-management.html#gym-management"><span class="std std-ref">Gym Management System</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-HR System w/ Access Control</div>
-<p class="sd-card-text">HR platform integrated with physical access control devices.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="hr-system.html#hr-system"><span class="std std-ref">HR System with Access Control Integration</span></a></div>
-</div>
-</div>
-</div>
+<p>This section gathers the major work streams in the portfolio, with each project
+presented as its own detailed page rather than being blended into a single long
+listing.</p>
+<section id="web-applications">
+<h2>Web Applications<a class="headerlink" href="#web-applications" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#web-applications'"><span>#</span></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="sulfurbook.html#sulfurbook"><span class="std std-ref">SulfurBook — Double-Entry Bookkeeping</span></a> — Double-entry bookkeeping application with AI-assisted
+financial workflows.</p></li>
+<li><p><a class="reference internal" href="photoshop-automation-plugin.html#photoshop-automation-plugin"><span class="std std-ref">Photoshop Automation Plugin — JavaScript</span></a> — Photoshop automation for repetitive
+design batch tasks.</p></li>
+<li><p><a class="reference internal" href="illustrator-automation-plugin.html#illustrator-automation-plugin"><span class="std std-ref">Illustrator Automation Plugin — JavaScript</span></a> — Illustrator automation for smart
+object replacement and export.</p></li>
+<li><p><a class="reference internal" href="chobirbaksho.html#chobirbaksho"><span class="std std-ref">ChobirBaksho.com — Performance Engineering</span></a> — Performance engineering work on a Laravel storefront.</p></li>
+<li><p><a class="reference internal" href="gym-management.html#gym-management"><span class="std std-ref">SharkRaven — Gym Management System</span></a> — Member management, scheduling, and billing platform.</p></li>
+<li><p><a class="reference internal" href="hr-system.html#hr-system"><span class="std std-ref">HRMS with Biometric Attendance Integration</span></a> — HR and access-control integration project.</p></li>
+</ul>
+</section>
+<section id="embedded-systems">
+<h2>Embedded Systems<a class="headerlink" href="#embedded-systems" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#embedded-systems'"><span>#</span></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="embedded-systems.html#embedded-systems"><span class="std std-ref">Embedded Systems</span></a> — Overview of the embedded hardware and firmware
+projects.</p></li>
+<li><p><a class="reference internal" href="tld-logger.html#tld-logger"><span class="std std-ref">Temperature Logger for Jute Mill Treatment</span></a> — Temperature logging system for jute mill treatment.</p></li>
+<li><p><a class="reference internal" href="xfishery-controller.html#xfishery-controller"><span class="std std-ref">xFishery — ESP32 Feeder Controller</span></a> — ESP32-based feeder controller for aquaculture.</p></li>
+<li><p><a class="reference internal" href="agnistop.html#agnistop"><span class="std std-ref">AgniStop — Fire Safety IoT</span></a> — LoRaWAN-based fire safety monitoring platform.</p></li>
+<li><p><a class="reference internal" href="self-balancing-robot.html#self-balancing-robot"><span class="std std-ref">Self Balancing Robot</span></a> — A self-balancing robot built as a control
+systems project.</p></li>
+<li><p><a class="reference internal" href="savage-v1.html#savage-v1"><span class="std std-ref">Savage V1 — Line Follower</span></a> — Line-following robot prototype.</p></li>
+<li><p><a class="reference internal" href="savage-v2.html#savage-v2"><span class="std std-ref">Savage V2 — Line + Ceiling Follower</span></a> — Line and ceiling following robot variation.</p></li>
+<li><p><a class="reference internal" href="savage-v3.html#savage-v3"><span class="std std-ref">Savage V3 — Modular LFR</span></a> — Modular line-follower robot platform.</p></li>
+<li><p><a class="reference internal" href="dc-dc-buck-converter.html#dc-dc-buck-converter"><span class="std std-ref">Variable DC-DC Buck Converter</span></a> — Variable buck converter for power electronics
+experimentation.</p></li>
+<li><p><a class="reference internal" href="h-bridge-motor-driver.html#h-bridge-motor-driver"><span class="std std-ref">H-Bridge Motor Driver (MOSFETs)</span></a> — MOSFET-based motor driver board.</p></li>
+<li><p><a class="reference internal" href="obstacle-indicator.html#obstacle-indicator"><span class="std std-ref">Obstacle Indicator for the Blind (Acoustics)</span></a> — Acoustic obstacle indicator for assistive use.</p></li>
+<li><p><a class="reference internal" href="esp8266-programmer.html#esp8266-programmer"><span class="std std-ref">ESP8266 ESP-01 Programmer Kit</span></a> — ESP8266 programming kit for quick flashing and
+prototyping.</p></li>
+</ul>
 
 </section>
-</div></div>
+</section>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#web-applications'" class="reference internal" href="#web-applications">Web Applications</a></li>
+<li><a :data-current="activeSection === '#embedded-systems'" class="reference internal" href="#embedded-systems">Embedded Systems</a></li>
+</ul>
+</div>
+</aside>
 </main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">

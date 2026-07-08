@@ -4,49 +4,42 @@
 Projects
 ========
 
-.. grid:: 1 2 2 2
+This section gathers the major work streams in the portfolio, with each project
+presented as its own detailed page rather than being blended into a single long
+listing.
 
-   .. grid-item-card:: Web Apps
-      :link: web-apps
-      :link-type: ref
-      :shadow: md
+Web Applications
+----------------
 
-      Full-stack web applications, APIs, and front-end work.
+- :ref:`sulfurbook` — Double-entry bookkeeping application with AI-assisted
+  financial workflows.
+- :ref:`photoshop-automation-plugin` — Photoshop automation for repetitive
+  design batch tasks.
+- :ref:`illustrator-automation-plugin` — Illustrator automation for smart
+  object replacement and export.
+- :ref:`chobirbaksho` — Performance engineering work on a Laravel storefront.
+- :ref:`gym-management` — Member management, scheduling, and billing platform.
+- :ref:`hr-system` — HR and access-control integration project.
 
-   .. grid-item-card:: Embedded Systems
-      :link: embedded-systems
-      :link-type: ref
-      :shadow: md
+Embedded Systems
+----------------
 
-      Firmware, microcontrollers, RTOS, and hardware-software integration.
-
-   .. grid-item-card:: PCB Design
-      :link: pcbs
-      :link-type: ref
-      :shadow: md
-
-      Schematic capture, layout, and board bring-up.
-
-   .. grid-item-card:: Firmware
-      :link: firmwares
-      :link-type: ref
-      :shadow: md
-
-      Bare-metal and firmware projects for various MCUs.
-
-   .. grid-item-card:: Gym Management System
-      :link: gym-management
-      :link-type: ref
-      :shadow: md
-
-      Member management, billing, scheduling, and reporting.
-
-   .. grid-item-card:: HR System w/ Access Control
-      :link: hr-system
-      :link-type: ref
-      :shadow: md
-
-      HR platform integrated with physical access control devices.
+- :ref:`embedded-systems` — Overview of the embedded hardware and firmware
+  projects.
+- :ref:`tld-logger` — Temperature logging system for jute mill treatment.
+- :ref:`xfishery-controller` — ESP32-based feeder controller for aquaculture.
+- :ref:`agnistop` — LoRaWAN-based fire safety monitoring platform.
+- :ref:`self-balancing-robot` — A self-balancing robot built as a control
+  systems project.
+- :ref:`savage-v1` — Line-following robot prototype.
+- :ref:`savage-v2` — Line and ceiling following robot variation.
+- :ref:`savage-v3` — Modular line-follower robot platform.
+- :ref:`dc-dc-buck-converter` — Variable buck converter for power electronics
+  experimentation.
+- :ref:`h-bridge-motor-driver` — MOSFET-based motor driver board.
+- :ref:`obstacle-indicator` — Acoustic obstacle indicator for assistive use.
+- :ref:`esp8266-programmer` — ESP8266 programming kit for quick flashing and
+  prototyping.
 
 
 .. toctree::
@@ -54,7 +47,3 @@ Projects
 
    web-apps
    embedded-systems
-   pcbs
-   firmwares
-   gym-management
-   hr-system

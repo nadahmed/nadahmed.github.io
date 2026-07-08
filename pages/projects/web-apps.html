@@ -31,7 +31,7 @@
 <link href="../../_static/awesome-sphinx-design.css?v=a81faafa" rel="stylesheet" type="text/css"/>
 <link href="../../search.html" rel="search" title="Search"/>
 <link href="../../genindex.html" rel="index" title="Index"/>
-<link href="embedded-systems.html" rel="next" title="Embedded Systems"/>
+<link href="sulfurbook.html" rel="next" title="SulfurBook — Double-Entry Bookkeeping"/>
 <link href="index.html" rel="prev" title="Projects"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
@@ -76,12 +76,29 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About Me</a></li>
 <li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Web Apps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="embedded-systems.html">Embedded Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pcbs.html">PCB Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="firmwares.html">Firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gym-management.html">Gym Management System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hr-system.html">HR System with Access Control Integration</a></li>
+<li class="toctree-l2 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="current reference internal expandable" href="#">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l3"><a class="reference internal" href="sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photoshop-automation-plugin.html">Photoshop Automation Plugin — JavaScript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gym-management.html">SharkRaven — Gym Management System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hr-system.html">HRMS with Biometric Attendance Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l3"><a class="reference internal" href="tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="agnistop.html">AgniStop — Fire Safety IoT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="self-balancing-robot.html">Self Balancing Robot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v1.html">Savage V1 — Line Follower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v2.html">Savage V2 — Line + Ceiling Follower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="savage-v3.html">Savage V3 — Modular LFR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="obstacle-indicator.html">Obstacle Indicator for the Blind (Acoustics)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="h-bridge-motor-driver.html">H-Bridge Motor Driver (MOSFETs)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../stack-skills.html">Stack &amp; Skills</a></li>
@@ -116,79 +133,32 @@
 <div id="content" role="main">
 <section id="web-apps">
 <span id="id1"></span><h1>Web Apps<a class="headerlink" href="#web-apps" title="Link to this heading"><span>#</span></a></h1>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-SulfurBook — Double-Entry Bookkeeping</div>
-<p class="sd-card-text"><strong>Stack:</strong> Python, PostgreSQL, MCP (Model Context Protocol)</p>
-<p class="sd-card-text">Developing a double-entry bookkeeping application designed for financial
-integrity and personal finance management. Integrated Model Context Protocol
-(MCP) servers to allow AI agents to interact directly with financial ledgers
-for automated reporting and auditing.</p>
-<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://github.com/nadahmed/sulfur-ledger"><span>View on GitHub</span></a></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Online Resume/Portfolio — Django</div>
-<p class="sd-card-text"><strong>Stack:</strong> Python, Django, HTML/CSS/JS, Heroku</p>
-<p class="sd-card-text">Created using Python/Django Framework with a modified template from
-TemplateMag.com. Skills section is custom. Contents are updated through
-Django Models and template tags. Deployed on Heroku and managed using
-GitHub.</p>
-<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://nadahmed.herokuapp.com"><span>Visit Site</span></a></p>
-<a class="reference internal image-reference" href="../../_images/django-portfolio.jpg"><img alt="../../_images/django-portfolio.jpg" src="../../_images/django-portfolio.jpg" style="width: 100%;"/>
-</a>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Photoshop Automation Plugin — JavaScript</div>
-<p class="sd-card-text">Written in JavaScript as a Photoshop plugin. Takes an input image and a
-template with Smart Object layers, automatically replaces them, and
-generates renamed output files per artboard. Built out of desperation for
-a repetitive batch process — now 150 items done in a day without being
-near the computer.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Illustrator Automation Plugin — JavaScript</div>
-<p class="sd-card-text">Similar to the Photoshop plugin, written in JavaScript for Adobe
-Illustrator. Automates smart object replacement across artboards and
-exports renamed PNG files ready for the printing press.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ChobirBaksho.com — Performance Engineering</div>
-<p class="sd-card-text"><strong>Stack:</strong> Laravel, AWS CloudFront, Redis</p>
-<p class="sd-card-text">Optimized a legacy Laravel e-commerce site. Cached assets via CloudFront
-and database queries via Redis — <strong>10x improvement</strong> in page load times
-and conversion rates.</p>
-<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://chobirbaksho.com"><span>Visit Site</span></a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>A collection of web-based products and tooling projects focused on practical
+engineering, automation, and polished user experiences.</p>
+<section id="featured-projects">
+<h2>Featured Projects<a class="headerlink" href="#featured-projects" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#featured-projects'"><span>#</span></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="sulfurbook.html#sulfurbook"><span class="std std-ref">SulfurBook — Double-Entry Bookkeeping</span></a> — Double-entry bookkeeping application with AI-friendly
+financial workflows.</p></li>
+<li><p><a class="reference internal" href="photoshop-automation-plugin.html#photoshop-automation-plugin"><span class="std std-ref">Photoshop Automation Plugin — JavaScript</span></a> — Photoshop automation for batch asset
+replacement and output generation.</p></li>
+<li><p><a class="reference internal" href="illustrator-automation-plugin.html#illustrator-automation-plugin"><span class="std std-ref">Illustrator Automation Plugin — JavaScript</span></a> — Illustrator automation for smart
+object replacement and export.</p></li>
+<li><p><a class="reference internal" href="chobirbaksho.html#chobirbaksho"><span class="std std-ref">ChobirBaksho.com — Performance Engineering</span></a> — Performance engineering work on a Laravel e-commerce
+storefront.</p></li>
+<li><p><a class="reference internal" href="gym-management.html#gym-management"><span class="std std-ref">SharkRaven — Gym Management System</span></a> — Member management, scheduling, and billing platform.</p></li>
+<li><p><a class="reference internal" href="hr-system.html#hr-system"><span class="std std-ref">HRMS with Biometric Attendance Integration</span></a> — HR and access-control integration project.</p></li>
+</ul>
+
 </section>
-</div></div>
+</section>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#featured-projects'" class="reference internal" href="#featured-projects">Featured Projects</a></li>
+</ul>
+</div>
+</aside>
 </main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">

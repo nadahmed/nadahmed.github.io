@@ -4,18 +4,21 @@
 Firmware
 ========
 
-.. grid:: 1
+A collection of firmware and embedded software projects focused on low-level
+control, hardware integration, and reliable communication protocols.
 
-   .. grid-item-card:: LoRa Smoke Detector Decoder
-      :shadow: md
+Featured Work
+-------------
 
-      **Target:** LoRa-enabled smoke detectors · **Language:** TypeScript
+- :ref:`esp8266-programmer` — A practical programming and flashing tool for
+  ESP8266 modules.
+- :ref:`tld-logger` — Embedded logger for temperature monitoring and reporting.
+- :ref:`agnistop` — Firmware and device-side logic for a LoRaWAN smoke safety
+  platform.
 
-      A decoder that parses raw LoRa smoke detector payloads into readable
-      objects for downstream alerting and monitoring systems.
+.. toctree::
+   :hidden:
 
-      .. button-link:: https://github.com/nadahmed/lora-smoke-decoder
-         :color: primary
-         :shadow:
-
-         View on GitHub
+   esp8266-programmer
+   tld-logger
+   agnistop
