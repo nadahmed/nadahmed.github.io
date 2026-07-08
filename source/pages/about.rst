@@ -12,8 +12,7 @@ accelerated with agents, build them. Doing things manually is a failure of
 imagination.
 
 **SulfurBook** exists because I wanted an immutable double-entry ledger that
-AI agents could audit directly — not a dashboard, an API for agents. **Ruslan's
-Studio** exists because a multi-branch gym had no way to guarantee financial
+AI agents could audit directly — not a dashboard, an API for agents. **SharkRaven** exists because a multi-branch gym had no way to guarantee financial
 integrity across locations; I gave them append-only ledgers and RBAC portals.
 **AgniStop** exists because a LoRa sync bug had the hardware team stuck for a
 year; I read the datasheets, rewrote the firmware layer, and shipped it in five

@@ -41,8 +41,8 @@ Work History
         FastAPI backends to stream real-time analytics to enterprise clients
       - Built a GIS tenant-tracking system that translated CAD floor plans into
         interactive web maps, giving mall management real-time occupancy visibility
-      - Led a high-visibility project for the **Crown Prince of Abu Dhabi** —
-        production-grade, on-schedule, stakeholder-facing
+      - Built a high-profile real estate platform tracking tenancy, buy/sell,
+        and property portfolios — production-grade, on-schedule, stakeholder-facing
       - Navigated rigorous **InfoSec compliance** for Azure-based deployments; zero
         security findings flagged post-audit
 

@@ -10,6 +10,8 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_design",
     "sphinx_copybutton",
+    'sphinx.ext.intersphinx',
+    'sphinxcontrib.youtube'
 ]
 
 templates_path = ["_templates"]
