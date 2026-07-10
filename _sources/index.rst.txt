@@ -4,19 +4,12 @@
 
 .. grid:: 1
 
-   .. grid-item-card:: About Me
-      :link: about
+   .. grid-item-card:: 💡 Featured Engineering
+      :link: featured
       :link-type: ref
       :shadow: md
 
-      Enthusiastic and adaptable technologist — Dhaka, Bangladesh.
-
-   .. grid-item-card:: Projects
-      :link: projects
-      :link-type: ref
-      :shadow: md
-
-      Gym management, AI agents, IoT safety systems, bookkeeping, and HR access control.
+      High-impact architectural work and commercial-grade projects.
 
    .. grid-item-card:: Stack & Skills
       :link: stack-skills
@@ -31,6 +24,13 @@
       :shadow: md
 
       Senior Full-Stack Engineer — 6+ years · Zealve, Alice Labs, Artefact, Hivecore
+
+   .. grid-item-card:: Projects
+      :link: projects
+      :link-type: ref
+      :shadow: md
+
+      Gym management, AI agents, IoT safety systems, bookkeeping, and HR access control.
 
    .. grid-item-card:: Education & Achievements
       :link: certifications
@@ -67,16 +67,23 @@
 
       Graphic design, branding, and visual work.
 
+   .. grid-item-card:: About Me
+      :link: about
+      :link-type: ref
+      :shadow: md
+
+      Enthusiastic and adaptable technologist — Dhaka, Bangladesh.
 
 .. toctree::
    :hidden:
 
-   pages/about
-   pages/projects/index
+   pages/featured
    pages/stack-skills
-   pages/certifications
    pages/work-history
+   pages/projects/index
+   pages/certifications
    pages/volunteer
    pages/interests
    pages/music
    pages/freelance-design
+   pages/about

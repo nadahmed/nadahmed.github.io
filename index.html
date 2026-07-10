@@ -31,7 +31,7 @@
 <link href="_static/awesome-sphinx-design.css?v=a81faafa" rel="stylesheet" type="text/css"/>
 <link href="search.html" rel="search" title="Search"/>
 <link href="genindex.html" rel="index" title="Index"/>
-<link href="pages/about.html" rel="next" title="About Me"/>
+<link href="pages/featured.html" rel="next" title="💡 Featured Engineering"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
 <div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
@@ -73,7 +73,9 @@
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="pages/about.html">About Me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/featured.html">💡 Featured Engineering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/stack-skills.html">Stack &amp; Skills</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/work-history.html">Work History</a></li>
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="pages/projects/index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="pages/projects/web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="pages/projects/sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
@@ -101,13 +103,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pages/stack-skills.html">Stack &amp; Skills</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/certifications.html">Education &amp; Achievements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pages/work-history.html">Work History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/volunteer.html">Volunteer Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/interests.html">Interests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/music.html">Music</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/freelance-design.html">Graphics Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/about.html">About Me</a></li>
 </ul>
 </nav>
 </div>
@@ -129,19 +130,10 @@
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-About Me</div>
-<p class="sd-card-text">Enthusiastic and adaptable technologist — Dhaka, Bangladesh.</p>
+💡 Featured Engineering</div>
+<p class="sd-card-text">High-impact architectural work and commercial-grade projects.</p>
 </div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/about.html#about"><span class="std std-ref">About Me</span></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Projects</div>
-<p class="sd-card-text">Gym management, AI agents, IoT safety systems, bookkeeping, and HR access control.</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/projects/index.html#projects"><span class="std std-ref">Projects</span></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/featured.html#featured"><span class="std std-ref">💡 Featured Engineering</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
@@ -160,6 +152,15 @@ Work History</div>
 <p class="sd-card-text">Senior Full-Stack Engineer — 6+ years · Zealve, Alice Labs, Artefact, Hivecore</p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/work-history.html#work-history"><span class="std std-ref">Work History</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Projects</div>
+<p class="sd-card-text">Gym management, AI agents, IoT safety systems, bookkeeping, and HR access control.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/projects/index.html#projects"><span class="std std-ref">Projects</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
@@ -205,6 +206,15 @@ Freelance Graphics</div>
 <p class="sd-card-text">Graphic design, branding, and visual work.</p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/freelance-design.html#freelance-design"><span class="std std-ref">Graphics Design</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+About Me</div>
+<p class="sd-card-text">Enthusiastic and adaptable technologist — Dhaka, Bangladesh.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="pages/about.html#about"><span class="std std-ref">About Me</span></a></div>
 </div>
 </div>
 </div>

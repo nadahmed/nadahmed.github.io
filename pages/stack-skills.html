@@ -31,8 +31,8 @@
 <link href="../_static/awesome-sphinx-design.css?v=a81faafa" rel="stylesheet" type="text/css"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="../genindex.html" rel="index" title="Index"/>
-<link href="certifications.html" rel="next" title="Education &amp; Achievements"/>
-<link href="projects/esp8266-programmer.html" rel="prev" title="ESP8266 ESP-01 Programmer Kit"/>
+<link href="work-history.html" rel="next" title="Work History"/>
+<link href="featured.html" rel="prev" title="💡 Featured Engineering"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
 <div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
@@ -74,7 +74,9 @@
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="about.html">About Me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="featured.html">💡 Featured Engineering</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stack &amp; Skills</a></li>
+<li class="toctree-l1"><a class="reference internal" href="work-history.html">Work History</a></li>
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="projects/sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
@@ -102,13 +104,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Stack &amp; Skills</a></li>
 <li class="toctree-l1"><a class="reference internal" href="certifications.html">Education &amp; Achievements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="work-history.html">Work History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="volunteer.html">Volunteer Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="music.html">Music</a></li>
 <li class="toctree-l1"><a class="reference internal" href="freelance-design.html">Graphics Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About Me</a></li>
 </ul>
 </nav>
 </div>
