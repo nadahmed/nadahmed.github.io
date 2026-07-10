@@ -4,7 +4,7 @@
 Projects
 ========
 
-.. grid:: 1 1 1
+.. grid:: 1
 
   .. grid-item-card:: Sulfurbook — Double-entry bookkeeping
     :link: sulfurbook
