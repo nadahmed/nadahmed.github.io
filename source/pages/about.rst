@@ -4,6 +4,17 @@
 About Me
 ========
 
+.. raw:: html
+
+   <style>
+     section#about-me { overflow: visible; }
+     .about-photo-wrap { float: right; shape-outside: circle(50%); width: min(220px, 35vw); aspect-ratio: 1; margin: 1.5rem 0 1rem 1.5rem; border-radius: 50%; overflow: hidden; opacity: 0.75; filter: grayscale(0.3); }
+     .about-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: -10px 0%; display: block; margin-top: unset !important; scale: 1.4; }
+     @media (max-width: 600px) { .about-photo-wrap { float: none; margin: 0 auto 1.5rem; width: min(180px, 50vw); } }
+   </style>
+
+   <div class="about-photo-wrap"><img src="/_static/images/noor/korea_visit.jpg" alt="South Korea workshop"></div>
+
 I'm a builder. Take a raw requirement — a smoke alarm system stalled for a year,
 a gym franchise with no centralized ledger, an accounting engine that needs to
 talk to AI agents — and I'll force it into a structured, working state. My

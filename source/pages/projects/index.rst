@@ -104,6 +104,13 @@ Projects
 
     Modular line-follower robot platform.
 
+  .. grid-item-card:: Money Counter — TW600L External Display
+    :link: moneycounter-display
+    :link-type: ref
+    :shadow: md
+
+    AVR C++ firmware decoding TW600L protocol on bare ATmega8A with 7-segment display.
+
   .. grid-item-card:: Obstacle Indicator
     :link: obstacle-indicator
     :link-type: ref
