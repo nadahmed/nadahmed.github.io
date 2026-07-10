@@ -80,13 +80,14 @@
 <li class="toctree-l3"><a class="reference internal" href="projects/sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/gym-management.html">SharkRaven — Gym Management System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/agnistop.html">AgniStop — Fire Safety IoT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/hr-system.html">HRMS with Biometric Attendance Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects/chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/photoshop-automation-plugin.html">Photoshop Automation Plugin — JavaScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/chobirbaksho.html">ChobirBaksho.com — Performance Engineering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="projects/hr-system.html">HRMS with Biometric Attendance Integration</a></li>
 </ul>
 </li>
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="projects/embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l3"><a class="reference internal" href="projects/moneycounter-display.html">TW600L Money Counter — External Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
 <li class="toctree-l3"><a class="reference internal" href="projects/self-balancing-robot.html">Self Balancing Robot</a></li>
@@ -132,7 +133,13 @@
 <div id="content" role="main">
 <section id="about-me">
 <span id="about"></span><h1>About Me<a class="headerlink" href="#about-me" title="Link to this heading"><span>#</span></a></h1>
-<p>I’m a builder. Take a raw requirement — a smoke alarm system stalled for a year,
+<style>
+  section#about-me { overflow: visible; }
+  .about-photo-wrap { float: right; shape-outside: circle(50%); width: min(220px, 35vw); aspect-ratio: 1; margin: 1.5rem 0 1rem 1.5rem; border-radius: 50%; overflow: hidden; opacity: 0.75; filter: grayscale(0.3); }
+  .about-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: -10px 0%; display: block; margin-top: unset !important; scale: 1.4; }
+  @media (max-width: 600px) { .about-photo-wrap { float: none; margin: 0 auto 1.5rem; width: min(180px, 50vw); } }
+</style>
+<div class="about-photo-wrap"><img alt="South Korea workshop" src="/_static/images/noor/korea_visit.jpg"/></div><p>I’m a builder. Take a raw requirement — a smoke alarm system stalled for a year,
 a gym franchise with no centralized ledger, an accounting engine that needs to
 talk to AI agents — and I’ll force it into a structured, working state. My
 instinct is always the same: if it can be automated, automate it. If it can be

@@ -21,9 +21,9 @@
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="#030711" media="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Firmware | Noor Al Din Ahmed — Portfolio</title>
-<meta content="Firmware | Noor Al Din Ahmed — Portfolio" property="og:title"/>
-<meta content="Firmware | Noor Al Din Ahmed — Portfolio" name="twitter:title"/>
+<title>TW600L Money Counter — External Display | Noor Al Din Ahmed — Portfolio</title>
+<meta content="TW600L Money Counter — External Display | Noor Al Din Ahmed — Portfolio" property="og:title"/>
+<meta content="TW600L Money Counter — External Display | Noor Al Din Ahmed — Portfolio" name="twitter:title"/>
 <link href="../../_static/pygments.css?v=e72c8e07" rel="stylesheet" type="text/css"/>
 <link href="../../_static/theme.css?v=d6d7c91b" rel="stylesheet" type="text/css"/>
 <link href="../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
@@ -31,6 +31,8 @@
 <link href="../../_static/awesome-sphinx-design.css?v=a81faafa" rel="stylesheet" type="text/css"/>
 <link href="../../search.html" rel="search" title="Search"/>
 <link href="../../genindex.html" rel="index" title="Index"/>
+<link href="tld-logger.html" rel="next" title="Temperature Logger for Jute Mill Treatment"/>
+<link href="embedded-systems.html" rel="prev" title="Embedded Systems"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
 <div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
@@ -71,9 +73,9 @@
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About Me</a></li>
-<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="index.html">Projects<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
 <li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="web-apps.html">Web Apps<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
 <li class="toctree-l3"><a class="reference internal" href="sulfurbook.html">SulfurBook — Double-Entry Bookkeeping</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gym-management.html">SharkRaven — Gym Management System</a></li>
@@ -84,8 +86,8 @@
 <li class="toctree-l3"><a class="reference internal" href="illustrator-automation-plugin.html">Illustrator Automation Plugin — JavaScript</a></li>
 </ul>
 </li>
-<li class="toctree-l2" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-cloak="" x-show="expanded">
-<li class="toctree-l3"><a class="reference internal" href="moneycounter-display.html">TW600L Money Counter — External Display</a></li>
+<li class="toctree-l2 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="embedded-systems.html">Embedded Systems<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">TW600L Money Counter — External Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tld-logger.html">Temperature Logger for Jute Mill Treatment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="xfishery-controller.html">xFishery — ESP32 Feeder Controller</a></li>
 <li class="toctree-l3"><a class="reference internal" href="self-balancing-robot.html">Self Balancing Robot</a></li>
@@ -126,29 +128,104 @@
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
 </a>
-<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Firmware</span>
+<div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="index.html">Projects</a>
+<div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="embedded-systems.html">Embedded Systems</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">TW600L Money Counter — External Display</span>
 </nav>
 <div id="content" role="main">
-<section id="firmware">
-<span id="firmwares"></span><h1>Firmware<a class="headerlink" href="#firmware" title="Link to this heading"><span>#</span></a></h1>
-<p>A collection of firmware and embedded software projects focused on low-level
-control, hardware integration, and reliable communication protocols.</p>
-<section id="featured-work">
-<h2>Featured Work<a class="headerlink" href="#featured-work" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#featured-work'"><span>#</span></a></h2>
+<section id="tw600l-money-counter-external-display">
+<span id="moneycounter-display"></span><h1>TW600L Money Counter — External Display<a class="headerlink" href="#tw600l-money-counter-external-display" title="Link to this heading"><span>#</span></a></h1>
+<p><strong>Stack:</strong> ATmega8A, AVR C++, PlatformIO, avr-libc, 7-segment display</p>
+<div class="video_wrapper" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; width: 100%">
+<iframe allowfullscreen="true" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2rj1b9FMeFM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="video_wrapper" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; width: 100%">
+<iframe allowfullscreen="true" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/U8P_6evZP6w" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="video_wrapper" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; width: 100%">
+<iframe allowfullscreen="true" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tK-sghOiGhE" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><p><strong>TL;DR</strong> — Zero-Arduino AVR C++ firmware that decodes the TW600L money counter
+protocol via external interrupt and drives a 3-digit multiplexed 7-segment
+display. Branch-free pin control, subtraction-based digit extraction, and
+throttled sensor polling free ~26 % CPU time vs naive implementations.</p>
+<p>—</p>
+<section id="the-problem">
+<h2>The Problem<a class="headerlink" href="#the-problem" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#the-problem'"><span>#</span></a></h2>
+<p>Off-the-shelf external displays for the TW600L currency counter are expensive
+and limited. The goal was to build a low-cost alternative using parts readily
+available in Bangladesh, designed for local manufacturing with minimal BOM cost
+and fast assembly.</p>
+</section>
+<section id="what-i-built">
+<h2>What I Built<a class="headerlink" href="#what-i-built" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#what-i-built'"><span>#</span></a></h2>
+<p>A compact, interrupt-driven firmware that captures 4-byte packets from the
+TW600L sensor via <code class="docutils literal notranslate"><span class="pre">INT0</span></code> and drives a common-cathode/common-anode auto-
+detecting 3-digit 7-segment display. The entire project is written in plain
+AVR C++ without a single Arduino dependency.</p>
+</section>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#key-features'"><span>#</span></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="esp8266-programmer.html#esp8266-programmer"><span class="std std-ref">ESP8266 ESP-01 Programmer Kit</span></a> — A practical programming and flashing tool for
-ESP8266 modules.</p></li>
-<li><p><a class="reference internal" href="tld-logger.html#tld-logger"><span class="std std-ref">Temperature Logger for Jute Mill Treatment</span></a> — Embedded logger for temperature monitoring and reporting.</p></li>
-<li><p><a class="reference internal" href="agnistop.html#agnistop"><span class="std std-ref">AgniStop — Fire Safety IoT</span></a> — Firmware and device-side logic for a LoRaWAN smoke safety
-platform.</p></li>
+<li><p><strong>Zero Arduino Dependencies</strong> — Built directly on avr-libc for smaller
+footprint and precise timing.</p></li>
+<li><p><strong>Interrupt-Driven Decoding</strong> — <code class="docutils literal notranslate"><span class="pre">INT0</span></code> captures TW600L data in the
+background without polling.</p></li>
+<li><p><strong>Non-Blocking Display</strong> — State-machine multiplexing of segments without
+halting the CPU.</p></li>
+<li><p><strong>Auto-Detect Display Type</strong> — PD4 is sensed at boot; firmware auto-inverts
+polarity for common cathode vs common anode. No code changes needed.</p></li>
+<li><p><strong>Branch-Free Pin Control</strong> — Pre-computed port/mask lookup tables with
+zero branches or switch statements in the hot path.</p></li>
+<li><p><strong>Subtraction-Based Digit Extraction</strong> — No division in the hot path (the
+ATmega8A has no hardware divider).</p></li>
+<li><p><strong>PROGMEM Segment Patterns</strong> — All 10 segment patterns stored in flash,
+zero RAM consumed.</p></li>
+<li><p><strong>Throttled Sensor Polling</strong> — <code class="docutils literal notranslate"><span class="pre">sensor.available()</span></code> checked only once per
+display refresh (~476 Hz) instead of every segment update (~10 kHz),
+eliminating ~99.8 % of redundant calls.</p></li>
 </ul>
-
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#architecture'"><span>#</span></a></h2>
+<p>The firmware is split into two clean layers:</p>
+<ul class="simple">
+<li><p><strong>``TW600L``</strong> — Interrupt-driven decoder for the TW600L 4-byte packet
+protocol. Data arrives on PD3 (data) clocked by PD2 (INT0).</p></li>
+<li><p><strong>``SevenSeg``</strong> — State-machine display driver that iterates through 3
+digits × 7 segments. At <code class="docutils literal notranslate"><span class="pre">init()</span></code>, all port pointers and masks are
+pre-computed; polarity inversion is applied via a single XOR with a
+pre-set flag.</p></li>
+</ul>
+</section>
+<section id="pcb-manufacturing">
+<h2>PCB &amp; Manufacturing<a class="headerlink" href="#pcb-manufacturing" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#pcb-manufacturing'"><span>#</span></a></h2>
+<p>Designed for Bangladesh’s local electronics ecosystem. Every decision was
+driven by cost and manufacturability:</p>
+<ul class="simple">
+<li><p><strong>Single-layer PCB</strong> — Local vendors charge significantly less for single-
+layer boards; all routing fits on one layer with no vias.</p></li>
+<li><p><strong>Minimal component count</strong> — Fewer parts means less soldering time and
+lower BOM cost.</p></li>
+<li><p><strong>Bent-pin SMD display</strong> — The 7-segment display pins are bent flat and
+soldered directly to the PCB as a surface-mount part, eliminating the need
+for a separate socket or connector. Through-hole components sit on the
+opposite side.</p></li>
+<li><p><strong>Custom KiCad footprints</strong> — The display and several other parts lacked
+existing library footprints (or finding them was too time-consuming), so
+all custom footprints were built from scratch in KiCad.</p></li>
+</ul>
+<p>Performance</p>
+<p>At 8 MHz, a full display refresh of 3 digits × 7 segments takes ~2.1 ms
+(~476 Hz). Leading zeros are blanked — value <code class="docutils literal notranslate"><span class="pre">0</span></code> displays as <code class="docutils literal notranslate"><span class="pre">"0"</span></code>,
+<code class="docutils literal notranslate"><span class="pre">42</span></code> as <code class="docutils literal notranslate"><span class="pre">"42"</span></code>, <code class="docutils literal notranslate"><span class="pre">234</span></code> as <code class="docutils literal notranslate"><span class="pre">"234"</span></code>.</p>
 </section>
 </section>
 </div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
 <div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
 <ul>
-<li><a :data-current="activeSection === '#featured-work'" class="reference internal" href="#featured-work">Featured Work</a></li>
+<li><a :data-current="activeSection === '#the-problem'" class="reference internal" href="#the-problem">The Problem</a></li>
+<li><a :data-current="activeSection === '#what-i-built'" class="reference internal" href="#what-i-built">What I Built</a></li>
+<li><a :data-current="activeSection === '#key-features'" class="reference internal" href="#key-features">Key Features</a></li>
+<li><a :data-current="activeSection === '#architecture'" class="reference internal" href="#architecture">Architecture</a></li>
+<li><a :data-current="activeSection === '#pcb-manufacturing'" class="reference internal" href="#pcb-manufacturing">PCB &amp; Manufacturing</a></li>
 </ul>
 </div>
 </aside>
