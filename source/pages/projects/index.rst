@@ -139,6 +139,13 @@ Projects
 
     ESP8266 programming kit for quick flashing and prototyping.
 
+  .. grid-item-card:: Wireless AVR Programmer
+    :link: avr-wireless-programmer
+    :link-type: ref
+    :shadow: md
+
+    ESP32-based wireless ISP programmer for AVR microcontrollers — no PC needed.
+
 
 .. toctree::
   :hidden:

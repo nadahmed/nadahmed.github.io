@@ -15,6 +15,7 @@ Embedded Systems
 - :ref:`dc-dc-buck-converter` — Variable DC-DC Buck Converter
 - :ref:`h-bridge-motor-driver` — H-Bridge Motor Driver (MOSFETs)
 - :ref:`esp8266-programmer` — ESP8266 ESP-01 Programmer Kit
+- :ref:`avr-wireless-programmer` — Wireless AVR Programmer (ESP32 ISP)
 
 
 .. toctree::
@@ -31,3 +32,4 @@ Embedded Systems
    dc-dc-buck-converter
    h-bridge-motor-driver
    esp8266-programmer
+   avr-wireless-programmer
