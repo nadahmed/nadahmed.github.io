@@ -21,9 +21,9 @@
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="#030711" media="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>H-Bridge Motor Driver (MOSFETs) | Noor Al Din Ahmed — Portfolio</title>
-<meta content="H-Bridge Motor Driver (MOSFETs) | Noor Al Din Ahmed — Portfolio" property="og:title"/>
-<meta content="H-Bridge Motor Driver (MOSFETs) | Noor Al Din Ahmed — Portfolio" name="twitter:title"/>
+<title>Wireless AVR Programmer — ESP32 Standalone ISP | Noor Al Din Ahmed — Portfolio</title>
+<meta content="Wireless AVR Programmer — ESP32 Standalone ISP | Noor Al Din Ahmed — Portfolio" property="og:title"/>
+<meta content="Wireless AVR Programmer — ESP32 Standalone ISP | Noor Al Din Ahmed — Portfolio" name="twitter:title"/>
 <link href="../../_static/pygments.css?v=e72c8e07" rel="stylesheet" type="text/css"/>
 <link href="../../_static/theme.css?v=d6d7c91b" rel="stylesheet" type="text/css"/>
 <link href="../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
@@ -31,8 +31,8 @@
 <link href="../../_static/awesome-sphinx-design.css?v=a81faafa" rel="stylesheet" type="text/css"/>
 <link href="../../search.html" rel="search" title="Search"/>
 <link href="../../genindex.html" rel="index" title="Index"/>
-<link href="esp8266-programmer.html" rel="next" title="ESP8266 ESP-01 Programmer Kit"/>
-<link href="dc-dc-buck-converter.html" rel="prev" title="Variable DC-DC Buck Converter"/>
+<link href="../certifications.html" rel="next" title="Education &amp; Achievements"/>
+<link href="esp8266-programmer.html" rel="prev" title="ESP8266 ESP-01 Programmer Kit"/>
 </head>
 <body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
 <div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
@@ -98,12 +98,12 @@
 <li class="toctree-l3"><a class="reference internal" href="savage-v3.html">Savage V3 — Modular LFR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="obstacle-indicator.html">Obstacle Indicator for the Blind (Acoustics)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dc-dc-buck-converter.html">Variable DC-DC Buck Converter</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">H-Bridge Motor Driver (MOSFETs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="h-bridge-motor-driver.html">H-Bridge Motor Driver (MOSFETs)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp8266-programmer.html">ESP8266 ESP-01 Programmer Kit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="avr-wireless-programmer.html">Wireless AVR Programmer — ESP32 Standalone ISP</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Wireless AVR Programmer — ESP32 Standalone ISP</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="avr-wireless-programmer.html">Wireless AVR Programmer — ESP32 Standalone ISP</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Wireless AVR Programmer — ESP32 Standalone ISP</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../certifications.html">Education &amp; Achievements</a></li>
@@ -133,42 +133,173 @@
 </a>
 <div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="index.html">Projects</a>
 <div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="embedded-systems.html">Embedded Systems</a>
-<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">H-Bridge Motor Driver (MOSFETs)</span>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Wireless AVR Programmer — ESP32 Standalone ISP</span>
 </nav>
 <div id="content" role="main">
-<section id="h-bridge-motor-driver-mosfets">
-<span id="h-bridge-motor-driver"></span><h1>H-Bridge Motor Driver (MOSFETs)<a class="headerlink" href="#h-bridge-motor-driver-mosfets" title="Link to this heading"><span>#</span></a></h1>
-<p><strong>Stack:</strong> MOSFETs, NPN Transistors, Perfboard</p>
-<a class="reference internal image-reference" href="../../_images/h-bridge.jpg"><img alt="../../_images/h-bridge.jpg" src="../../_images/h-bridge.jpg" style="width: 100%;"/>
-</a>
-<p><strong>TL;DR</strong> — Custom H-bridge using 2 N-Channel and 2 P-Channel MOSFETs with NPN
-transistor drivers. Designed to drive DC motors for a Mars Rover project.</p>
+<section id="wireless-avr-programmer-esp32-standalone-isp">
+<span id="avr-wireless-programmer"></span><h1>Wireless AVR Programmer — ESP32 Standalone ISP<a class="headerlink" href="#wireless-avr-programmer-esp32-standalone-isp" title="Link to this heading"><span>#</span></a></h1>
+<p><strong>Stack:</strong> ESP32, C++, Arduino framework, PlatformIO, SPI, ESPAsyncWebServer, ArduinoJson, LittleFS</p>
+<p><strong>TL;DR</strong> — A self-contained ESP32 that acts as a wireless ISP programmer for AVR microcontrollers.
+Hosts its own Wi‑Fi access point with a web UI — upload a .hex file through a browser, click flash,
+and the ESP32 programs the target chip over SPI. No USB, no ISP dongle, no PC required.</p>
 <p>—</p>
-<p>Built a discrete H-bridge motor driver from scratch — no L298 or integrated
-driver IC. The design uses four MOSFETs (two N-channel, two P-channel) in a
-classic H-bridge configuration, with NPN bipolar transistors providing the
-gate drive logic.</p>
-<p>The NPN transistors level-shift the microcontroller’s 5 V logic signals to
-drive the MOSFET gates properly, ensuring clean switching. Flyback diodes
-protect against inductive kickback from the DC motors.</p>
-<p>Designed specifically for the Mars Rover project’s drive motors, where both
-forward/reverse and PWM speed control were needed.</p>
-<section id="key-details">
-<h2>Key Details<a class="headerlink" href="#key-details" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#key-details'"><span>#</span></a></h2>
+<section id="the-problem">
+<h2>The Problem<a class="headerlink" href="#the-problem" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#the-problem'"><span>#</span></a></h2>
+<p>Programming AVR microcontrollers (ATmega328P, ATmega168, ATmega8) typically requires a dedicated
+USB-to-ISP dongle (Arduino-as-ISP, USBasp, AVRISP mkII) tethered to a computer. This is fine on a
+workbench but impractical for field deployment, quick iterations on a soldering bench, or when you
+need to flash a chip that’s already embedded in a device. On top of that, a misconfigured clock fuse
+can “brick” a chip by disabling its internal oscillator, requiring an external clock source just to
+recover it.</p>
+</section>
+<section id="what-i-built">
+<h2>What I Built<a class="headerlink" href="#what-i-built" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#what-i-built'"><span>#</span></a></h2>
+<p>An ESP32-based standalone ISP programmer that completely eliminates the need for a PC in the
+programming workflow. It creates its own Wi‑Fi access point (<code class="docutils literal notranslate"><span class="pre">AVR_Wireless_Station</span></code>), serves a
+responsive dark-theme web interface, and communicates with the target AVR over hardware SPI using
+the standard Atmel ISP 4-wire protocol. A continuous 1 MHz PWM signal on GPIO4 provides a rescue
+clock to keep bricked chips alive during programming.</p>
+</section>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#key-features'"><span>#</span></a></h2>
 <ul class="simple">
-<li><p><strong>High-side</strong> — 2x P-Channel MOSFETs (IRF9540 or equivalent)</p></li>
-<li><p><strong>Low-side</strong> — 2x N-Channel MOSFETs (IRF540 or equivalent)</p></li>
-<li><p><strong>Gate drivers</strong> — 2x NPN transistors (2N2222) for level shifting</p></li>
-<li><p><strong>Protection</strong> — Flyback diodes across each MOSFET</p></li>
-<li><p><strong>Control</strong> — PWM-compatible for variable speed</p></li>
-<li><p><strong>Construction</strong> — Perfboard with point-to-point soldering</p></li>
+<li><p><strong>Wireless operation</strong> — ESP32 acts as a Wi‑Fi access point. No router, no cables, no host PC.</p></li>
+<li><p><strong>Web-based file management</strong> — Upload .hex files, browse stored binaries, delete them — all from
+a browser running on a phone, tablet, or laptop.</p></li>
+<li><p><strong>Intel HEX parser</strong> — Handles record types 00 (data), 01 (EOF), 02 (extended segment address),
+and 04 (extended linear address) with arbitrary base address offsets.</p></li>
+<li><p><strong>Fuse presets</strong> — 11 pre-computed low/high fuse configurations across three chips for common
+clock sources (internal RC 1 MHz / 8 MHz, external 16 MHz crystal, external clock rescue mode).</p></li>
+<li><p><strong>Automatic chip detection</strong> — Reads the 3-byte device signature and validates the selected fuse
+preset against the connected chip, rejecting mismatches to prevent bricking.</p></li>
+<li><p><strong>Flash verify</strong> — Optional readback verification that compares every programmed byte against
+the original binary.</p></li>
+<li><p><strong>Rescue clock</strong> — Continuous 1 MHz square wave on GPIO4 drives the target’s XTAL1 pin,
+enabling recovery of chips whose fuses are set to external clock/crystal sources.</p></li>
+<li><p><strong>Persistent storage</strong> — Uploaded binaries are stored on ESP32’s LittleFS (1.25 MB dedicated
+partition), surviving power loss.</p></li>
+<li><p><strong>OTA-ready layout</strong> — Two 1.25 MB app partitions enable future over-the-air firmware updates
+without reprogramming the ESP32 via USB.</p></li>
+<li><p><strong>LED status</strong> — On-board LED signals idle (off), programming activity (flicker), or failure
+(100 ms blink).</p></li>
 </ul>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#architecture'"><span>#</span></a></h2>
+<p>The firmware is split into two main modules:</p>
+<dl>
+<dt><strong>AVRProgrammer (``AVRProgrammer.h`` / ``AVRProgrammer.cpp``)</strong></dt><dd><p>Implements the full AVR ISP protocol over hardware SPI at 100 kHz. Every transaction is a 4-byte
+packet. Key operations:</p>
+<ul class="simple">
+<li><p>Programming Enable handshake (<code class="docutils literal notranslate"><span class="pre">0xAC</span> <span class="pre">0x53</span> <span class="pre">0x00</span> <span class="pre">0x00</span></code>)</p></li>
+<li><p>Signature read (<code class="docutils literal notranslate"><span class="pre">0x30</span> <span class="pre">0x00</span> <span class="pre">0xAA</span> <span class="pre">0x00</span></code>)</p></li>
+<li><p>Fuse write (low / high / extended)</p></li>
+<li><p>Chip erase</p></li>
+<li><p>Page-buffer load (word-by-word) and page-commit for flash programming</p></li>
+<li><p>Flash readback for verification</p></li>
+<li><p>Bit-bang SPI fallback (maintained for reference)</p></li>
+</ul>
+<p>Flash pages are 128 bytes (64 words) for ATmega168/328P and 64 bytes (32 words) for ATmega8.
+Each page is fully buffered before the write command is issued, with a 10 ms settling delay.</p>
+</dd>
+<dt><strong>HTTP Server &amp; API (``main.cpp``)</strong></dt><dd><p>An ESPAsyncWebServer instance on port 80 serves the web UI and a RESTful JSON API:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/</span></code></dt><dd><p>Returns the web interface (embedded dark-theme HTML/CSS/JS).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/api/upload-hex</span></code></dt><dd><p>Accepts a JSON payload with filename + Intel HEX content, parses it into binary, and stores
+it on LittleFS.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/api/hex-files</span></code></dt><dd><p>Lists all stored .bin files with sizes.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/api/hex-files?name=...</span></code></dt><dd><p>Removes a stored file.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/api/flash</span></code></dt><dd><p>Triggers the full ISP pipeline: enter programming mode → verify signature → optionally burn
+fuses → chip erase → write flash → optionally verify → exit.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="rescue-clock">
+<h2>Rescue Clock<a class="headerlink" href="#rescue-clock" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#rescue-clock'"><span>#</span></a></h2>
+<p>The ESP32’s LEDC peripheral generates a continuous 1 MHz, 50 % duty cycle square wave on GPIO4,
+connected to the target’s XTAL1 input. This ensures the AVR has a valid clock source regardless
+of its fuse settings. A chip whose fuses are set to “External Crystal” or “External Clock” would
+otherwise be unrecoverable through ISP without an external signal generator. The rescue clock starts
+at boot and runs continuously.</p>
+</section>
+<section id="wiring">
+<h2>Wiring<a class="headerlink" href="#wiring" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#wiring'"><span>#</span></a></h2>
+<p>Target AVR pins (shown for DIP-28 ATmega328P):</p>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>ESP32</p></th>
+<th class="head"><p>Target</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO 18
+GPIO 19
+GPIO 23
+GPIO  5
+GPIO  4
+GPIO 13
+3.3V
+GND</p></td>
+<td><p>SCK   (Pin 19)
+MISO  (Pin 18)
+MOSI  (Pin 17)
+/RESET (Pin 1)
+XTAL1 (Pin 9) — rescue clk
+Status LED (via 220 Ω)
+VCC    (Pin 7)
+GND    (Pin 22)</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="supported-targets">
+<h2>Supported Targets<a class="headerlink" href="#supported-targets" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#supported-targets'"><span>#</span></a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Chip</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>Page</p></th>
+<th class="head"><p>Signature</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ATmega8/A
+ATmega168/P
+ATmega328P</p></td>
+<td><p>8 KB
+16 KB
+32 KB</p></td>
+<td><p>64 B (32 w)
+128 B (64 w)
+128 B (64 w)</p></td>
+<td><p>0x1E 0x93 0x07
+0x1E 0x94 0x06
+0x1E 0x95 0x0F</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </section>
 </section>
 </div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
 <div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
 <ul>
-<li><a :data-current="activeSection === '#key-details'" class="reference internal" href="#key-details">Key Details</a></li>
+<li><a :data-current="activeSection === '#the-problem'" class="reference internal" href="#the-problem">The Problem</a></li>
+<li><a :data-current="activeSection === '#what-i-built'" class="reference internal" href="#what-i-built">What I Built</a></li>
+<li><a :data-current="activeSection === '#key-features'" class="reference internal" href="#key-features">Key Features</a></li>
+<li><a :data-current="activeSection === '#architecture'" class="reference internal" href="#architecture">Architecture</a></li>
+<li><a :data-current="activeSection === '#rescue-clock'" class="reference internal" href="#rescue-clock">Rescue Clock</a></li>
+<li><a :data-current="activeSection === '#wiring'" class="reference internal" href="#wiring">Wiring</a></li>
+<li><a :data-current="activeSection === '#supported-targets'" class="reference internal" href="#supported-targets">Supported Targets</a></li>
 </ul>
 </div>
 </aside>
