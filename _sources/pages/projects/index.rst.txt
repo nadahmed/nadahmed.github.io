@@ -152,4 +152,3 @@ Projects
 
   web-apps
   embedded-systems
-  avr-wireless-programmer
